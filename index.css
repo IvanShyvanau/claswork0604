@@ -1,4 +1,4 @@
-.float-left{
+/*.float-left{
 float: left;
 width: 33%;
 }
@@ -6,4 +6,33 @@ width: 33%;
 .float-right{
 float: right;
 width: 33%;
+}*/
+.box{
+  width: 300px;
+  height: 200px;
+  background: rgb(255, 0 ,0);
+}
+@media(max-width: 460px) {
+  .box{
+    background: rgb(0, 254, 100);
+  }
+}
+
+.float-left{
+  float: left;
+  width: 500px;
+  background-color: rgb(210, 200, 0);
+}
+
+.float-right{
+  float: right;
+  width: 700px;
+  background-color:rgb(200, 10, 100)
+}
+
+@media(max-width: 1216px){
+  .float-left, .float-right{
+    float: unset;
+    width: 100%;
+  }
 }
